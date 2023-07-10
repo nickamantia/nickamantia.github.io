@@ -1,0 +1,260 @@
+*,
+*::before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 12px;
+}
+
+.body {
+  background-color: #0a192f;
+  box-sizing: border-box;
+}
+
+.nav {
+  padding: 3.7rem 5rem;
+  position: absolute;
+  right: 0;
+  display: inline-block;
+}
+
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  animation: inFromBottom 0.75s ease-out;
+  font-size: 1.5rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: #ccd6f6;
+  margin-right: 3rem;
+}
+
+.nav-link:hover {
+  color: #ff91a4;
+}
+
+.resume {
+  border: solid 1px;
+  padding: 0.8rem;
+  border-radius: 4px;
+}
+
+.opening-section {
+  width: 100%;
+  display: inline-block;
+}
+
+.self-photo-container {
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+}
+
+.self-photo {
+  height: 5rem;
+  width: 5rem;
+  animation: inFromBottom 0.75s ease-out;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.intro {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #ff91a4;
+  margin-top: 12rem;
+  animation: inFromBottom 0.75s ease-out 0.25s;
+  animation-fill-mode: backwards;
+}
+
+.name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.8rem;
+  color: #ccd6f6;
+  padding-top: 0.8rem;
+  animation: inFromBottom 0.75s ease-out 0.35s;
+  animation-fill-mode: backwards;
+}
+
+.me {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.4rem;
+  color: #8892b0;
+  padding-top: 0.8rem;
+
+  animation: inFromBottom 0.75s ease-out 0.45s;
+  animation-fill-mode: backwards;
+}
+
+.info {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  max-width: 48rem;
+  color: #8892b0;
+  padding-top: 3.8rem;
+
+  animation: inFromBottom 0.75s ease-out 0.55s;
+  animation-fill-mode: backwards;
+}
+
+.employment {
+  display: inline-block;
+}
+
+.intro-photo {
+  width: 25rem;
+  animation: inFromBottom 0.75s ease-out 0.85s;
+  animation-fill-mode: backwards;
+  margin-left: -4rem;
+  filter: opacity(80%);
+}
+
+.section-title {
+  font-family: 'Roboto', sans-serif;
+  color: #ccd6f6;
+  font-size: 3rem;
+  margin-top: 7rem;
+}
+
+.section-info {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  max-width: 48rem;
+  color: #8892b0;
+  padding-top: 3.8rem;
+}
+
+.tech-logos {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 85vw;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.tech-logos p {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #8892b0;
+}
+
+.svg {
+  width: 5rem;
+  display: block;
+  padding: 0.5rem;
+}
+
+.project-container {
+  padding: 3rem;
+  margin-top: 3rem;
+  background-color: #0c1d34;
+}
+
+.project-title {
+  font-family: 'Roboto', sans-serif;
+  color: #ccd6f6;
+  font-size: 2.2rem;
+}
+
+.project-image-mobile {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.project-info {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  max-width: 48rem;
+  color: #8892b0;
+  padding-top: 1rem;
+}
+
+.box {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+
+.project-tech {
+  font-family: 'Roboto', sans-serif;
+  color: #8892b0;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-top: 1.5rem;
+  word-spacing: 1rem;
+  line-height: 2.4rem;
+}
+
+.project-svg {
+  color: #ccd6f6;
+  width: 3.5rem;
+  margin-top: 2rem;
+  padding-right: 1rem;
+}
+
+.project-image {
+  display: none;
+}
+
+.contact-svg {
+  color: #ccd6f6;
+  width: 7rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  fill: #ccd6f6;
+}
+
+.bottom-section {
+  width: 98vw;
+  margin-top: 5rem;
+}
+
+.contact-svg-container {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+@keyframes inFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .nav {
+    padding: 3.7rem .5rem;
+  }
+}
